@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/04.dir/04/string/strtype4.cpp.o  -o 04 

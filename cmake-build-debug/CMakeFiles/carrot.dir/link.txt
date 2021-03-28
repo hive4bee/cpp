@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/carrot.dir/02/convert.cpp.o  -o carrot 
