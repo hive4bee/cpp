@@ -1,5 +1,0 @@
-/home/seongjin/workspace/c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/seongjin/workspace/c++/cmake-build-debug/CMakeFiles/c__.dir
-/home/seongjin/workspace/c++/cmake-build-debug/CMakeFiles/carrot.dir
-/home/seongjin/workspace/c++/cmake-build-debug/CMakeFiles/04.dir
-/home/seongjin/workspace/c++/cmake-build-debug/CMakeFiles/edit_cache.dir
