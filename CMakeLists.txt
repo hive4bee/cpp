@@ -8,4 +8,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(c__  imsi/imsi.cpp)#02/myFirst.cpp
 add_executable(carrot 02/convert.cpp)
-add_executable(04 04/pointerMemory/arraynew.cpp)
+add_executable(04 04/pointArrCal/mixtypes.cpp)
