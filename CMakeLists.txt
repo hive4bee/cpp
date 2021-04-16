@@ -4,6 +4,7 @@ project(carrot)
 project(04)
 project(05)
 project(06)
+project(07)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -12,3 +13,4 @@ add_executable(carrot 02/convert.cpp)
 add_executable(04 04/pointArrCal/mixtypes.cpp)
 add_executable(05 05/loopText/textin4.cpp)
 add_executable(06 06/file/sumafile.cpp)
+add_executable(07 07/cstr/strgback.cpp)
