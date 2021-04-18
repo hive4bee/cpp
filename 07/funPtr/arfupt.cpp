@@ -24,27 +24,27 @@ int main(){
     auto pb = pa;
     cout << "\n함수 포인터를 원소로 가지는 배열:\n";
     cout << "주소 값\n";
-    for(int i=0; i<3; i++){
+    for(int i=0; i<3; i++) {
         cout << pa[i](av, 3) << ": " << *pa[i](av, 3) << endl;
-        cout << "\n함수 포인터를 가리키는 포인터:\n";
-        cout << "주소 값\n";
-        for(int i=0; i<3; i++){
-            cout << pb[i](av,3) << ": " << *pb[i](av, 3) << endl;
-        }
-
-        cout << "\n포인터를 원소로 가지는 배열을 가리키는 포인터:\n";
-        cout << "주소 값\n";
-        auto pc = &pa;
-
-        cout << (*pc)[0](av,3) << ": " << *(*pc)[0](av, 3) << endl;
-        const double *(*(*pd)[3])(const double *, int) = &pa;
-
-        const double* pdb = (*pd)[1](av, 3);
-        cout << pdb << ": " << *pdb << endl;
-
-        cout << (*(*pd)[2])(av, 3) << ": " << *(*(*pd)[2])(av,3) << endl;
-        return 0;
     }
+    cout << "\n함수 포인터를 가리키는 포인터:\n";
+    cout << "주소 값\n";
+    for(int i=0; i<3; i++){
+        cout << pb[i](av,3) << ": " << *pb[i](av, 3) << endl;
+    }
+
+    cout << "\n포인터를 원소로 가지는 배열을 가리키는 포인터:\n";
+    cout << "주소 값\n";
+    auto pc = &pa;
+
+    cout << (*pc)[0](av,3) << ": " << *(*pc)[0](av, 3) << endl;
+    const double *(*(*pd)[3])(const double *, int) = &pa;
+
+    const double* pdb = (*pd)[1](av, 3);
+    cout << pdb << ": " << *pdb << endl;
+
+    cout << (*(*pd)[2])(av, 3) << ": " << *(*(*pd)[2])(av,3) << endl;
+    return 0;
 }
 
 const double* f1(const double * ar, int n){
