@@ -5,6 +5,7 @@ project(04)
 project(05)
 project(06)
 project(07)
+project(08)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -14,3 +15,4 @@ add_executable(04 04/pointArrCal/mixtypes.cpp)
 add_executable(05 05/loopText/textin4.cpp)
 add_executable(06 06/file/sumafile.cpp)
 add_executable(07 07/funPtr/arfupt.cpp)
+add_executable(08 08/reference/strquote.cpp)
