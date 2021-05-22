@@ -21,6 +21,7 @@ int main(){
     cout << ", rodents = " << rodents << endl;
 
     cout << "bunnies의 주소 = " << &bunnies;
+    cout << ", rats의 주소 = " << &rats;
     cout << ", rodents의 주소 = " << &rodents << endl;
     return 0;
 }
