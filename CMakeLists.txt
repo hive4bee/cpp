@@ -7,6 +7,7 @@ project(06)
 project(07)
 project(08)
 project(09)
+project(10)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -18,3 +19,5 @@ add_executable(06 06/file/sumafile.cpp)
 add_executable(07 07/funPtr/arfupt.cpp)
 add_executable(08 08/funTemplate/choices.cpp)
 add_executable(09 09/namespace/usenmsp.cpp)
+add_executable(10 10/basicClass/usestock0.cpp)
+
