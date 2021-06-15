@@ -8,8 +8,11 @@ project(07)
 project(08)
 project(09)
 project(10)
+project(11)
 
 set(CMAKE_CXX_STANDARD 14)
+#include_directories(11/operatorOverloading)
+
 
 add_executable(c__  imsi/imsi.cpp)#02/myFirst.cpp
 add_executable(carrot 02/convert.cpp)
@@ -21,3 +24,8 @@ add_executable(08 08/funTemplate/choices.cpp)
 add_executable(09 09/namespace/usenmsp.cpp)
 add_executable(10 10/basicClass/usestock0.cpp)
 
+set(example 11/operatorOverloading/mytime0.cpp 11/operatorOverloading/usetime0.cpp)
+set(overloading2 11/operatorOverloading/mytime1.cpp 11/operatorOverloading/usetime1.cpp)
+set(operatorOverloading3 11/operatorOverloading/mytime2.cpp 11/operatorOverloading/usetime2.cpp)
+set(friend 11/friend/mytime3.cpp 11/friend/usetime3.cpp)
+add_executable(11 ${friend})
