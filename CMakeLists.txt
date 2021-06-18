@@ -28,4 +28,5 @@ set(example 11/operatorOverloading/mytime0.cpp 11/operatorOverloading/usetime0.c
 set(overloading2 11/operatorOverloading/mytime1.cpp 11/operatorOverloading/usetime1.cpp)
 set(operatorOverloading3 11/operatorOverloading/mytime2.cpp 11/operatorOverloading/usetime2.cpp)
 set(friend 11/friend/mytime3.cpp 11/friend/usetime3.cpp)
-add_executable(11 ${friend})
+set(overloadingVector 11/overloadingVector/vect.cpp 11/overloadingVector/randwalk.cpp)
+add_executable(11 ${overloadingVector})
