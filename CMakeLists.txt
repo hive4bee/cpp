@@ -9,6 +9,7 @@ project(08)
 project(09)
 project(10)
 project(11)
+project(12)
 
 set(CMAKE_CXX_STANDARD 14)
 #include_directories(11/operatorOverloading)
@@ -28,4 +29,14 @@ set(example 11/operatorOverloading/mytime0.cpp 11/operatorOverloading/usetime0.c
 set(overloading2 11/operatorOverloading/mytime1.cpp 11/operatorOverloading/usetime1.cpp)
 set(operatorOverloading3 11/operatorOverloading/mytime2.cpp 11/operatorOverloading/usetime2.cpp)
 set(friend 11/friend/mytime3.cpp 11/friend/usetime3.cpp)
-add_executable(11 ${friend})
+set(overloadingVector 11/overloadingVector/vect.cpp 11/overloadingVector/randwalk.cpp)
+set(changeClass 11/changeClass/stone.cpp 11/changeClass/stonewt.cpp)
+set(changeClass1 11/changeClass/stone1.cpp 11/changeClass/stonewt1.cpp)
+
+add_executable(11 ${changeClass1})
+
+set(dynamic 12/dynamic/stringbad.cpp 12/dynamic/vegnews.cpp)
+set(nString 12/nString/string1.cpp 12/nString/sayings1.cpp)
+set(nString2 12/nString/string1.cpp 12/nString/sayings2.cpp)
+set(ptrobj 12/ptrobj/placenew2.cpp)
+add_executable(12 ${ptrobj})
