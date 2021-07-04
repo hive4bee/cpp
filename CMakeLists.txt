@@ -41,3 +41,7 @@ set(nString2 12/nString/string1.cpp 12/nString/sayings2.cpp)
 set(ptrobj 12/ptrobj/placenew2.cpp)
 set(queue 12/queue/queue.cpp 12/queue/bank.cpp)
 add_executable(12 ${queue})
+
+set(basicClass 13/basicClass/tabtenn0.cpp 13/basicClass/usett0.cpp)
+set(basicClass2 13/basicClass2/tabtenn1.cpp 13/basicClass2/usett1.cpp)
+add_executable(13 ${basicClass2})
