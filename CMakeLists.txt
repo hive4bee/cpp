@@ -44,4 +44,5 @@ add_executable(12 ${queue})
 
 set(basicClass 13/basicClass/tabtenn0.cpp 13/basicClass/usett0.cpp)
 set(basicClass2 13/basicClass2/tabtenn1.cpp 13/basicClass2/usett1.cpp)
-add_executable(13 ${basicClass2})
+set(polymorhphic 13/polymorhphic/brass.cpp 13/polymorhphic/usebrass2.cpp)
+add_executable(13 ${polymorhphic})

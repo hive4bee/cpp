@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../mylib/include/my.h
+string
+-
+
+/home/seongjin/workspace/c++/cm/main.cpp
+iostream
+-
+my.h
+/home/seongjin/workspace/c++/cm/my.h
+
