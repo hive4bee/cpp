@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 project(c__)
 project(carrot)
 project(04)
@@ -46,3 +46,42 @@ set(basicClass 13/basicClass/tabtenn0.cpp 13/basicClass/usett0.cpp)
 set(basicClass2 13/basicClass2/tabtenn1.cpp 13/basicClass2/usett1.cpp)
 set(polymorhphic 13/polymorhphic/brass.cpp 13/polymorhphic/usebrass2.cpp)
 add_executable(13 ${polymorhphic})
+
+
+
+
+project(cm2)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cm2/cmake")#CMakeLists.txt가 포함된 디렉토리
+
+add_executable(cm2 cm2/main.cpp)
+
+include(FindPkgConfig)
+include_directories(${INCLUDE_CM_DIRECTORY})
+find_package(Rec)
+find_package(cm2)
+find_library(RECTANGLE_LIB
+        NAMES librectangle
+        PATHS /home/seongjin/workspace/c++/cm2/lib/librectangle)
+message(${INCLUDE_CM_DIRECTORY})
+message(${LIBRARY_CM_DIRECTORY})
+message(/////////////////${RECTANGLE_LIB})
+message(${SSSSSSSSSSSSSSs})
+target_link_libraries(cm2 ${LIBRARY_CM_DIRECTORY} ${RECTANGLE_LIB})
+
+
+
+
+#project(cm3)
+#list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cm3/cmake")
+#add_executable(cm3 cm3/main.cpp)
+#include(FindPkgConfig)
+#find_package(Person REQUIRED)
+#include_directories(${PERSON_INCLUDE_DIRECTORY})
+#target_link_libraries(cm3 ${PERSON_LIBRARY_DIRECTORY})
+#find_package(Rectangle REQUIRED)
+#include_directories(${RECTANGLE_INCLUDE_DIRECTORY})
+#target_link_libraries(cm3 ${RECTANGLE_LIBRARY_DIRECTORY})
+#find_package(cm3 REQUIRED)
+#include_directories(${CM_INCLUDE_DIRECTORY})
+#add_executable(cm3 cm3/main.cpp)
+#target_link_libraries(cm3 ${CM_LIBRARY_DIRECTORY})

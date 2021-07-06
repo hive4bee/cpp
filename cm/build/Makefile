@@ -123,19 +123,6 @@ mytest/fast:
 	$(MAKE) -f CMakeFiles/mytest.dir/build.make CMakeFiles/mytest.dir/build
 .PHONY : mytest/fast
 
-#=============================================================================
-# Target rules for targets named mylib
-
-# Build rule for target.
-mylib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mylib
-.PHONY : mylib
-
-# fast build rule for target.
-mylib/fast:
-	$(MAKE) -f mylib/CMakeFiles/mylib.dir/build.make mylib/CMakeFiles/mylib.dir/build
-.PHONY : mylib/fast
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -172,7 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... mytest"
-	@echo "... mylib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

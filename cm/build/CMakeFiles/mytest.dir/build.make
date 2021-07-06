@@ -79,7 +79,6 @@ mytest_EXTERNAL_OBJECTS =
 
 mytest: CMakeFiles/mytest.dir/main.cpp.o
 mytest: CMakeFiles/mytest.dir/build.make
-mytest: mylib/libmylib.a
 mytest: CMakeFiles/mytest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/seongjin/workspace/c++/cm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mytest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mytest.dir/link.txt --verbose=$(VERBOSE)

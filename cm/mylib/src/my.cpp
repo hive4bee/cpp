@@ -9,7 +9,6 @@ Person::Person(string nm, int a){
     name = nm;
     age = a;
 }
-
 void Person::Name(string nm){
     name = nm;
 }
