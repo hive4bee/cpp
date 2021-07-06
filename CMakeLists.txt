@@ -62,18 +62,24 @@ find_package(cm2)
 find_library(RECTANGLE_LIB
         NAMES librectangle
         PATHS /home/seongjin/workspace/c++/cm2/lib/librectangle)
-message(${INCLUDE_CM_DIRECTORY})
+message(INCLUDE_CM_DIRECTORY: ${INCLUDE_CM_DIRECTORY})
 message(${LIBRARY_CM_DIRECTORY})
 message(/////////////////${RECTANGLE_LIB})
-message(${SSSSSSSSSSSSSSs})
+message(sssss${SSSSSSSSSSSSSSs})
 target_link_libraries(cm2 ${LIBRARY_CM_DIRECTORY} ${RECTANGLE_LIB})
 
 
 
 
-#project(cm3)
+project(cm3)
 #list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cm3/cmake")
-#add_executable(cm3 cm3/main.cpp)
+
+add_executable(cm3 cm3/main.cpp)
+add_library(app cm3/libs/Station.cpp)
+#link_libraries(cm3 app)
+include_directories(cm3/includes)
+
+target_link_libraries(cm3 ${LIBRARY_CM_DIRECTORY} ${RECTANGLE_LIB} app)
 #include(FindPkgConfig)
 #find_package(Person REQUIRED)
 #include_directories(${PERSON_INCLUDE_DIRECTORY})

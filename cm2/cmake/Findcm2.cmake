@@ -2,12 +2,12 @@ set(FIND_CM_PATHS
         /home/seongjin/workspace/c++/cm2)
 find_path(INCLUDE_CM_DIRECTORY
         PATH_SUFFIXES include
-        PATHS ${FIND_CM_PATHS}
+        HINTS ${FIND_CM_PATHS}
         NO_CACHE)
 find_library(SSSSSSSSSSSSSSs
-        NAMES librectangle
+        NAMES librectangle.a
         PATH_SUFFIXES lib
-        PATHS /home/seongjin/workspace/c++/cm2/lib/librectangle.a)
+        HINTS /home/seongjin/workspace/c++/cm2)
 
 find_library(LIBRARY_CM_DIRECTORY
         NAMES libmylib

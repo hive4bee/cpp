@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/rectangle.h
+iostream
+-
+string
+-
+
+/home/seongjin/workspace/c++/cm/rectangle/src/rectangle.cpp
+rectangle.h
+/home/seongjin/workspace/c++/cm/rectangle/src/rectangle.h
+iostream
+-
+
