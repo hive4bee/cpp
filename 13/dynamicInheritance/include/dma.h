@@ -44,6 +44,7 @@ public:
     hasDMA(const hasDMA &hs);
     ~hasDMA();
     hasDMA &operator=(const hasDMA &rs);
+    hasDMA(const baseDMA &);
     friend std::ostream &operator<<(std::ostream &os, const hasDMA &rs);
 };
 

@@ -97,3 +97,10 @@ std::ostream &operator<<(std::ostream &os, const hasDMA &hs){
     os << "스타일: " << hs.style << std::endl;
     return os;
 }
+
+hasDMA::hasDMA(const baseDMA &b)
+    : baseDMA(b){
+    style = new char[std::strlen("hi") + 1];
+    std::strcpy(style, "hi");
+}
+

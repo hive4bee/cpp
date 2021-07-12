@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include "dma.h"
+#include "acctabc.h"
 
 int main(){
     using std::cout;
@@ -32,5 +33,14 @@ int main(){
     cout << "hasDMA 대입결과:\n";
     cout << map2 << endl;
 
+    hasDMA imsi;
+    imsi = shirt;
+
+    cout << "/////////////" << endl;
+    cout << imsi << endl;
+    cout << "/////////////" << endl;
+    hasDMA temp = (const baseDMA &) shirt;
+    cout << temp << endl;
     return 0;
 }
+
