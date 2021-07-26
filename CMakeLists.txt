@@ -143,3 +143,9 @@ add_executable(classTemplate6 14/classTemplate/tempparm.cpp)
 
 project(classTemplate7)
 add_executable(classTemplate7 14/classTemplate/frnd2tmp.cpp)
+
+project(friendTv)
+add_executable(friendTv 15/friendTv/use_tv.cpp)
+include_directories(15/friendTv/include)
+add_library(friendTvLib 15/friendTv/lib/tv.cpp)
+target_link_libraries(friendTv friendTvLib)
