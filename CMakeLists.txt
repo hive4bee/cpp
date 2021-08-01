@@ -149,3 +149,7 @@ add_executable(friendTv 15/friendTv/use_tv.cpp)
 include_directories(15/friendTv/include)
 add_library(friendTvLib 15/friendTv/lib/tv.cpp)
 target_link_libraries(friendTv friendTvLib)
+
+project(nested)
+include_directories(15/nested/include)
+add_executable(nested 15/nested/nested.cpp)
