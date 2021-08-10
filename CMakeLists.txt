@@ -153,3 +153,12 @@ target_link_libraries(friendTv friendTvLib)
 project(nested)
 include_directories(15/nested/include)
 add_executable(nested 15/nested/nested.cpp)
+
+project(exception)
+add_executable(exception 15/exception/error1.cpp)
+add_executable(exception2 15/exception/error2.cpp)
+add_executable(exception3 15/exception/error3.cpp)
+
+
+include_directories(15/exception/include)
+add_executable(exception4 15/exception/error4.cpp)
