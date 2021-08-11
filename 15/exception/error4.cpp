@@ -6,8 +6,8 @@
 #include <cmath>
 #include "exc_mean.h"
 
-double hmean(double a, double b) noexcept(false);
-double gmean(double a, double b) noexcept(false);
+double hmean(double a, double b) throw(bad_hmean);
+double gmean(double a, double b) throw(bad_gmean);
 
 int main(){
     using std::cout;
@@ -40,14 +40,14 @@ int main(){
     return 0;
 }
 
-double hmean(double a, double b) noexcept(false) {
+double hmean(double a, double b) throw(bad_hmean){
     if(a == -b){
         throw bad_hmean(a, b);
     }
     return 2.0 * a * b / (a + b);
 }
 
-double gmean(double a, double b) noexcept(false) {
+double gmean(double a, double b) throw(bad_gmean){
     if(a < 0 || b < 0){
         throw bad_gmean(a, b);
     }

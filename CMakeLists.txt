@@ -162,3 +162,4 @@ add_executable(exception3 15/exception/error3.cpp)
 
 include_directories(15/exception/include)
 add_executable(exception4 15/exception/error4.cpp)
+add_executable(exception5 15/exception/error5.cpp)
