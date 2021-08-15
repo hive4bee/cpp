@@ -163,3 +163,11 @@ add_executable(exception3 15/exception/error3.cpp)
 include_directories(15/exception/include)
 add_executable(exception4 15/exception/error4.cpp)
 add_executable(exception5 15/exception/error5.cpp)
+
+add_executable(newexcp 15/exception/newexcp.cpp)
+
+add_executable(useSales 15/exception/use_sales.cpp)
+add_library(sales 15/exception/lib/sales.cpp)
+target_link_libraries(useSales sales)
+
+add_executable(constcast 15/cast/constcast.cpp)
