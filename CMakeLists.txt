@@ -171,3 +171,6 @@ add_library(sales 15/exception/lib/sales.cpp)
 target_link_libraries(useSales sales)
 
 add_executable(constcast 15/cast/constcast.cpp)
+
+project(16)
+add_executable(str1 16/string/str1.cpp)
