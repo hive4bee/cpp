@@ -25,3 +25,10 @@ void change(const int *pt, int n){
     pc = const_cast<int *>(pt);
     *pc += n;
 }
+
+/*
+ dynamic_cast: 기초클래스로 캐스팅(업캐스팅)
+ const_cast: const 캐스팅(데이터 형 변환은 안됨)
+ static_cast: 데이터형을 변활할 때 사용
+ reinterpret_cast:
+ */
