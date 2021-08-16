@@ -174,3 +174,7 @@ add_executable(constcast 15/cast/constcast.cpp)
 
 project(16)
 add_executable(str1 16/string/str1.cpp)
+add_executable(example 16/string/get_getline_cin.cpp)
+add_executable(example2 16/string/get_getline_cin2.cpp)
+add_executable(example3 16/string/get_getline_cin3.cpp)
+add_executable(strfile 16/string/strfile.cpp)
