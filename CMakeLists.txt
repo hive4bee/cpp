@@ -181,3 +181,7 @@ add_executable(strfile 16/string/strfile.cpp)
 
 add_executable(smrtptrs 16/smartPointer/smrtptrs.cpp)
 add_executable(fowl 16/smartPointer/fowl.cpp)
+
+add_executable(vect1 16/stl/vect1.cpp)
+add_executable(vect2 16/stl/vect2.cpp)
+add_executable(vect3 16/stl/vect3.cpp)
