@@ -185,3 +185,11 @@ add_executable(fowl 16/smartPointer/fowl.cpp)
 add_executable(vect1 16/stl/vect1.cpp)
 add_executable(vect2 16/stl/vect2.cpp)
 add_executable(vect3 16/stl/vect3.cpp)
+
+add_executable(copyit 16/collection/copyit.cpp)
+add_executable(inserts 16/collection/inserts.cpp)
+add_executable(list 16/collection/list.cpp)
+add_executable(set 16/collection/setops.cpp)
+add_executable(multimap 16/collection/multimap.cpp)
+
+add_executable(functor 16/functor/functor.cpp)
