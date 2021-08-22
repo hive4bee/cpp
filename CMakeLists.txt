@@ -193,3 +193,12 @@ add_executable(set 16/collection/setops.cpp)
 add_executable(multimap 16/collection/multimap.cpp)
 
 add_executable(functor 16/functor/functor.cpp)
+add_executable(funadap 16/functor/funadap.cpp)
+
+add_executable(strgst1 16/algorithm/strgst1.cpp)
+add_executable(listrmv 16/algorithm/listrmv.cpp)
+add_executable(usealgo 16/algorithm/usealgo.cpp)
+
+add_executable(valvect 16/etc/valvect.cpp)
+add_executable(vslice 16/etc/vslice.cpp)
+add_executable(ilist 16/etc/ilist.cpp)
