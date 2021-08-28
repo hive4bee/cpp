@@ -212,3 +212,10 @@ add_executable(precise 17/print/precise.cpp)
 add_executable(showpt 17/print/showpt.cpp)
 add_executable(setf 17/print/setf.cpp)
 add_executable(setf2 17/print/setf2.cpp)
+
+add_executable(check_it 17/input/check_it.cpp)
+add_executable(cin_exception 17/input/cin_exception.cpp)
+
+add_executable(getFun 17/input/get_fun.cpp)
+add_executable(peeker 17/input/peeker.cpp)
+add_executable(truncate 17/input/truncate.cpp)
