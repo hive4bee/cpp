@@ -219,3 +219,7 @@ add_executable(cin_exception 17/input/cin_exception.cpp)
 add_executable(getFun 17/input/get_fun.cpp)
 add_executable(peeker 17/input/peeker.cpp)
 add_executable(truncate 17/input/truncate.cpp)
+
+add_executable(fileio 17/file/fileio.cpp)
+add_executable(strout 17/file/strout.cpp)
+add_executable(strin 17/file/strin.cpp)
